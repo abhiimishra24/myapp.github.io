@@ -6,20 +6,54 @@
          document.write("<h1>student Data</h1>");
          document.write("<br>");
          document.write("<h3>name = " + object1.name+"</h3>");
- document.write("<h3>id = " + object1.id+"</h3>");  
-           
+ document.write("<h3>id = " + object1.id+"</h3>"); 
+
+var sample =  {'hi':11,'mt':22,'en':20} ;
+var summed = sum( sample );
+document.write( "Marks: "+summed ); 
+          
+document.write("<br>");
 
          var object2 = { name : "b", id  : "124"};
          document.write("<br>");
          document.write("<h3>name = " + object2.name+"</h3>");  
-         document.write("<h3>id = " + object2.id+"</h3>");   
-                    
+         document.write("<h3>id = " + object2.id+"</h3>"); 
+
   
+              var sample = {'hi':12,'mt':20,'en':10};
+var summed = sum( sample );
+document.write( "Marks: "+summed );      
+  
+document.write("<br>");
  var object3 = { name : "c", id  : "125" };
+ 
          document.write("<br>");
          document.write("<h3>name = " + object3.name+"</h3>");  
-         document.write("<h3>id = " + object3.id+"</h3>");   
-                    
+         document.write("<h3>id = " + object3.id+"</h3>");
+// document.write("<h3>id = " + object3.marks.hi+"</h3>");
+
+function sum( obj ) {
+  var sum = 0;
+  for( var el in obj ) {
+    if( obj.hasOwnProperty( el ) ) {
+      sum += parseFloat( obj[el] );
+    }
+  }
+  return sum;
+}
+    
+
+
+var Marks = {'hi':12,'mt':22,'en':23};
+var summed = sum( Marks );
+document.write( "Marks: "+summed );
+
+
+
+
+
+        
+  
   
 
       </script>
