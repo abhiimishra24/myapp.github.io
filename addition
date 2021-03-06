@@ -2,20 +2,20 @@
    <head>
       <title>JSON example</title>
       <script language = "javascript" >
-         var object1 = { "name" : "A", "id"  : "123" };
-         document.write("<h1>JSON with JavaScript example</h1>");
+         var object1 = { name : "A", id  : "123" };
+         document.write("<h1>student Data</h1>");
          document.write("<br>");
          document.write("<h3>name = " + object1.name+"</h3>");
  document.write("<h3>id = " + object1.id+"</h3>");  
            
 
-         var object2 = { "name" : "b", "id"  : "124"};
+         var object2 = { name : "b", id  : "124"};
          document.write("<br>");
          document.write("<h3>name = " + object2.name+"</h3>");  
          document.write("<h3>id = " + object2.id+"</h3>");   
                     
   
- var object3 = { "name" : "c", "id"  : "125" };
+ var object3 = { name : "c", id  : "125" };
          document.write("<br>");
          document.write("<h3>name = " + object3.name+"</h3>");  
          document.write("<h3>id = " + object3.id+"</h3>");   
