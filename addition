@@ -1,43 +1,86 @@
-<!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
+   <head>
+      <title>JSON example</title>
+      <script language = "javascript" >
+         var object1 = { 
+name : "A", 
+id  : "123",
+ marks : {'hi':11,'mt':22,'en':20}	
+ };
 
-<h2>Student data</h2>
+         var object2 = {
+ name : "b", 
+id  : "124",
 
-<p id="demo"></p>
+ marks : {'hi':12,'mt':20,'en':10}	
+};
 
-<p id="helo"></p>
-<p id="new"></p>
+  var object3 = {
+ name : "c",
+ id  : "125" ,
 
-<script>
-var student = 
-  {
-      name:'A',
-      id: 123,
-      marks:[{'hi':11,'mt':22,'en':20}]
-    }
+ marks : {'hi':12,'mt':22,'en':23}	
+};
+
+         document.write("<h1>student Data</h1>");
+         document.write("<br>");
+         document.write("<h3>name = " + object1.name+"</h3>");
+         document.write("<h3>id = " + object1.id+"</h3>"); 
+
+
+          var summed = sum(object1.marks  );
+          document.write( "Marks: "+summed ); 
+
+         document.write("<br>");
+         document.write("<h3>name = " + object2.name+"</h3>");  
+         document.write("<h3>id = " + object2.id+"</h3>"); 
+
   
- var student1 =  {
-    
-      name:'B',
-      id: 124,
-      marks:[{'hi':12,'mt':20,'en':10}]
-   }
-    var student2 = {
-      name:'C',
-      id: 125,
-      marks:[{'hi':12,'mt':22,'en':23}]
+
+var summed = sum( object2.marks );
+document.write( "Marks: "+summed );      
+  
+document.write("<br>");
+       
+ 
+         document.write("<br>");
+         document.write("<h3>name = " + object3.name+"</h3>");  
+         document.write("<h3>id = " + object3.id+"</h3>");
+// document.write("<h3>id = " + object3.marks.hi+"</h3>");
+
+function sum( obj ) {
+  var sum = 0;
+  for( var el in obj ) {
+    if( obj.hasOwnProperty( el ) ) {
+      sum += parseFloat( obj[el] );
     }
-document.getElementById("demo").innerHTML = student.name+"<br>"+student.id+"<br>"+student.marks;
+  }
+  return sum;
+}
+    
 
-document.getElementById("helo").innerHTML = student1.name+"<br>"+student1.id+"<br>"+student1.marks;
 
-document.getElementById("new").innerHTML = student2.name+"<br>"+student2.id+"<br>"+student2.marks;
+var summed = sum( object3.marks );
+document.write( "Marks: "+summed );
 
 
-</script>
 
-</body>
+
+
+        
+  
+  
+
+      </script>
+   </head>
+    <body>
+   </body>
 </html>
+
+
+    
+
+
+
+         
+
