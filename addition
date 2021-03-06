@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title> abhii</title>
+
+    <script>
+        function calc() {
+            var n1= parseInt(document.getElementById('n1').value);
+            var n2 = parseInt(document.getElementById('n2').value);
+            var oper = document.getElementById('operators').value;
+            var value;
+            if (oper == '+') {
+                value=document.getElementById('ab').value = n1 + n2;
+  
+            }
+            if (oper == '-') {
+                value= document.getElementById('ab').value = n1 - n2;
+                
+           }
+            if (oper == '/') {
+                value=document.getElementById('ab').value = n1 / n2;
+              
+            }
+            if (oper == '*') {
+                value=document.getElementById('ab').value = n1 * n2;
+              
+            }
+            window.location.href = "valuePage.html" + "?value=" + value;
+        }
+    
+           
+    </script>
+    <style>
+        form {
+            border: 3px solid black;
+            background-color: yellow;
+            width: 500px;
+            padding: 100px;
+        }
+
+        button {
+            border: 3px solid black;
+            background-color: blue;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body >
+    <center>
+
+
+            value1 <input type="text" id="n1" />
+            <br>
+            <br>
+            value2<input type="text" id="n2" />
+            <br>
+            <br>
+
+            <select id="operators">
+                <option value="+">Addition</option>
+                <option value="-">Substraction</option>
+                <option value="/">divide</option>
+                <option value="*">multiplication</option>
+            </select><br> <br>
+            <button type="button" onclick="calc();">submit</button>
+            <input type="text" id="ab"/>
+
+        </center>
+</body>
+</html>
+
