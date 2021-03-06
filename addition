@@ -6,10 +6,10 @@
          document.write("<h1>student Data</h1>");
          document.write("<br>");
          document.write("<h3>name = " + object1.name+"</h3>");
- document.write("<h3>id = " + object1.id+"</h3>"); 
+         document.write("<h3>id = " + object1.id+"</h3>"); 
 
-var sample =  {'hi':11,'mt':22,'en':20} ;
-var summed = sum( sample );
+var Marks =  {'hi':11,'mt':22,'en':20} ;
+var summed = sum( Marks );
 document.write( "Marks: "+summed ); 
           
 document.write("<br>");
@@ -20,12 +20,12 @@ document.write("<br>");
          document.write("<h3>id = " + object2.id+"</h3>"); 
 
   
-              var sample = {'hi':12,'mt':20,'en':10};
-var summed = sum( sample );
+var Marks = {'hi':12,'mt':20,'en':10};
+var summed = sum( Marks );
 document.write( "Marks: "+summed );      
   
 document.write("<br>");
- var object3 = { name : "c", id  : "125" };
+         var object3 = { name : "c", id  : "125" };
  
          document.write("<br>");
          document.write("<h3>name = " + object3.name+"</h3>");  
